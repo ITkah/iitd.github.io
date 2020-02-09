@@ -1,0 +1,114 @@
+.top-header {
+    background: #000;
+}
+
+.call-header {
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a {
+        color: #fff;
+        text-decoration: underline;
+        font: 300 1rem 'Roboto', sans-serif;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+
+.header-container {
+    display: grid;
+    grid-template-columns: 4fr 7fr 1fr 5fr;
+    align-items: center;
+    grid-gap: 20px;
+    @media (max-width: 1280px) {
+        grid-template-columns: 3fr 8fr 2fr 5fr;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            color: #000;
+            margin: 0 10px;
+            font: 300 1rem 'Roboto', sans-serif;
+        }
+    }
+}
+
+.header-logo {
+    padding: 8px 0;
+}
+
+.search-lang-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-box {
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.lang-box {
+    a {
+        margin: 0 3px;
+        color: #000;
+        font: 300 1rem 'Roboto', sans-serif;
+    }
+    a:first-child {
+        position: relative;
+        &::after {
+            content: '|';
+            position: absolute;
+            right: -6.5px;
+        }
+    }
+    .active-lang {
+        color: #BE111F;
+    }
+}
+
+.btn-header-wrap {
+    display: flex;
+    font: 300 1rem 'Roboto', sans-serif;
+    text-align: center;
+    word-wrap: none;
+    a:first-child{
+        background: #E02F3D;
+        color: #fff;
+        padding: 39px 30px;
+        white-space: nowrap;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        .calendar {
+            position: relative;
+            left: -15px;
+            top: -2.5px;
+            span {
+                color: #fff;
+                background: #000;
+                border-radius: 50%;
+                text-align: center;
+                height: 10px;
+                width: 10px;
+                padding: 2px;
+                position: absolute;
+                top: 11px;
+                left: 10px;
+                font: 300 .6rem 'Roboto', sans-serif;
+            }
+        }
+    }
+    a:last-child {
+        background: #BE111F;
+        padding: 39px 20px;
+        white-space: nowrap;
+        color: #fff;
+    }
+}

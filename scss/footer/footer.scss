@@ -1,0 +1,101 @@
+footer {
+    background: #E9E9E9;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-gap: 25px;
+    .footer-box-link {
+        padding: 40px 0;
+    }
+    .footer-title {
+        font: 500 1.125rem 'Roboto', sans-serif;
+        margin-bottom: 25px;
+    }
+    .footer-simple-link {
+        margin-bottom: 25px;
+        font: 300 1.125rem 'Roboto', sans-serif;
+        display: block;
+        color: #000;
+    }
+    .footer-box-sm {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.footer-social-box {
+    background: #000;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        right: 0;
+        bottom: -40px;
+        display: block;
+        background: #BE111F;
+    }
+    a {
+        color: #fff;
+        font: 300 1rem 'Roboto', sans-serif;
+        margin-bottom: 60px;
+        padding-right: 40px;
+        position: relative;
+    }
+    a:last-child {
+        margin: 0;
+    }
+    .insta{
+        &::after {
+            position: absolute;
+            top: -5px;
+            right: -20px;
+            content: url(../img/icon/insta.svg);
+        }
+    }
+    .fb{
+        &::after {
+            position: absolute;
+            top: -5px;
+            right: -20px;
+            content: url(../img/icon/fb.svg);
+        }
+    }
+    .tg{
+        &::after {
+            position: absolute;
+            top: -5px;
+            right: -20px;
+            content: url(../img/icon/telegram.svg);
+        }
+    }
+    .phone{
+        &::after {
+            position: absolute;
+            top: -5px;
+            right: -20px;
+            content: url(../img/icon/phone.svg);
+        }
+    }
+    .mail{
+        &::after {
+            position: absolute;
+            top: -5px;
+            right: -20px;
+            content: url(../img/icon/mail.svg);
+        }
+    }
+}
+
+.footer-black {
+    background: #000;
+    height: 40px;
+}
