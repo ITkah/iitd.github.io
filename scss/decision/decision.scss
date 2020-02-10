@@ -1,0 +1,56 @@
+.tabs__content {
+	display: none; 
+}
+.tabs__content.active {
+	display: block; 
+}
+
+.decision-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 70px;
+    .tabs__caption {
+        display: flex;
+        flex-direction: column;
+        p {
+            text-align: center;
+            padding: 15px 40px;
+            border: 3px solid #000;
+            transition: .3s;
+            cursor: pointer;
+            margin-bottom: 30px;
+            font: 300 1.125rem 'Roboto', sans-serif;
+            &:hover {
+                border: 3px solid #E02F3D;  
+            }
+        }
+        .active-tab {
+            background: #E02F3D;
+            color: #fff;
+            border: 3px solid #E02F3D;  
+        }
+    }
+    .active {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        a {
+            background: #E9E9E9;
+            text-decoration: underline;
+            padding: 15px 50px 15px 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            height: 20px;
+            color: #000;
+            font: 300 1rem 'Roboto', sans-serif;
+            position: relative;
+            &::after {
+                content: url(../img/icon/arrow-red.svg);
+                position: absolute;
+                right: 20px;
+                top: 30%;
+            }
+        }
+    }
+}

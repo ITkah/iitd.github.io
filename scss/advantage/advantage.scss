@@ -1,0 +1,15 @@
+.advantage-wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    justify-content: center;
+}
+
+.advantage-box {
+    display: flex;
+    flex-direction: column;
+    img {
+        height: 170px;
+        margin-bottom: 35px;
+    }
+}

@@ -1,0 +1,21 @@
+.dark-block {
+    background: #000;
+    margin-bottom: 80px;
+}
+
+.dark-wrapper {
+    padding: 25px 0;
+    color: #fff;
+}
+
+.dark-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .dark-text {
+        max-width: 750px;
+        .dark-title {
+            font: 500 1.25rem 'Roboto', sans-serif;
+        }
+    }
+}

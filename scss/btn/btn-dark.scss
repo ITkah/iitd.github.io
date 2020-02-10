@@ -1,0 +1,40 @@
+.btn-dark {
+    border: 3px solid #E02F3D;
+    background: #000;
+    padding: 16px 150px 16px 50px;
+    color: #fff;
+    position: relative;
+    transition: .4s;
+    cursor: pointer;
+    font: 300 1.125rem 'Roboto', sans-serif;
+    &:hover {
+        background: #E02F3D;
+    }
+    &::after {
+        position: absolute;
+        top: 30%;
+        right: 20px;
+        content: url(../img/icon/arrow.svg);
+    }
+}
+
+.btn-white {
+    border: 3px solid #E02F3D;
+    background: #fff;
+    padding: 16px 150px 16px 50px;
+    color: #000;
+    position: relative;
+    transition: .4s;
+    font: 300 1.125rem 'Roboto', sans-serif;
+    cursor: pointer;
+    &:hover {
+        background: #E02F3D;
+        color: #fff;
+    }
+    &::after {
+        position: absolute;
+        top: 30%;
+        right: 20px;
+        content: url(../img/icon/arrow-white.svg);
+    }
+}

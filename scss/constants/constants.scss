@@ -2,19 +2,35 @@ main {
 	min-height: calc(100vh - 80px);
 }
 
+input,button {
+	outline: none;
+	border-radius: 0;
+}
+
 .container {
 	max-width: 1400px;
 	margin: 0 auto;
 }
 
 .padding {
-	padding: 0 40px;
+	padding: 0 50px;
 	@media (max-width: 990px) {
 		padding: 0 20px;
 	}
 	@media (max-width: 576px) {
 		padding: 0 15px;
 	}
+}
+
+.margin {
+	margin-bottom: 140px;
+	@media (max-width: 990px) {
+		margin-bottom: 40px;
+	}
+}
+
+.center {
+	text-align: center;
 }
 
 body {
@@ -31,3 +47,4 @@ p,h1,h2,h3,h4,h5 {
 a {
 	text-decoration: none;
 }
+

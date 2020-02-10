@@ -1,5 +1,12 @@
 .top-header {
     background: #000;
+    z-index: 9999;
+    position: relative;
+}
+
+header {
+    z-index: 9999;
+    position: relative;
 }
 
 .call-header {

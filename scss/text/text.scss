@@ -1,0 +1,34 @@
+.title-xl {
+	text-transform: uppercase;
+	font: 700 1.2rem 'Roboto', sans-serif;
+	margin-bottom: 70px;
+    position: relative;
+    @media (max-width: 990px) {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+	&::before {
+		content: '';
+		display: block;
+		height: 2px;
+		width: 250px;
+		top: 45%;
+		left: -260px;
+		background: #000;
+		position: absolute;
+	}
+}
+
+.text-simple {
+    font: 300 1.125rem/150% 'Roboto', sans-serif;
+    @media (max-width: 990px) {
+        font-size: .87rem;
+    }
+}
+
+.text-simple-sm {
+    font: 300 1rem/150% 'Roboto', sans-serif;
+    @media (max-width: 990px) {
+        font-size: .87rem;
+    }
+}

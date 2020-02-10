@@ -1,0 +1,47 @@
+.fixed-social-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    padding-top: 140px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #000;
+    z-index: 99999;
+    width: 30px;
+    height: 100vh;
+    a {
+        margin-bottom: 30px;
+    }
+    .insta{
+        &::after {
+            position: relative;
+            content: url(../img/icon/insta.svg);
+        }
+    }
+    .fb{
+        &::after {
+            position: relative;
+            content: url(../img/icon/fb.svg);
+        }
+    }
+    .tg{
+        &::after {
+            position: relative;
+            content: url(../img/icon/telegram.svg);
+        }
+    }
+    .phone{
+        &::after {
+            position: relative;
+            content: url(../img/icon/phone.svg);
+        }
+    }
+    .mail{
+        &::after {
+            position: relative;
+            content: url(../img/icon/mail.svg);
+        }
+    }
+}

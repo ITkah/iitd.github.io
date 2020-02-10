@@ -1,0 +1,104 @@
+.feedback {
+    margin-bottom: -4px;
+}
+.feedback-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 50px;
+    .text-simple {
+        margin-bottom: 35px;
+    }
+    .feedback-input-wrapper {
+        padding: 30px 50px;
+        border: 2px solid #000000;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+        margin-bottom: 30px;
+        input {
+            border: 0.5px solid #000;
+            background: #F9F9F9;
+            padding: 5px 15px;
+            height: 30px;
+            &:focus {
+                border: 0.5px solid #E02F3D;
+            }
+        }
+    }
+}
+
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 17px;
+    font: 300 .87rem 'Roboto', sans-serif;
+    text-decoration: underline;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 10px;
+    width: 10px;
+    background: #F9F9F9;
+    border: 0.5px solid #E02F3D;
+    left: 0px;
+    top: 2px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 2px;
+    width: 4px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    
+    transform: rotate(-45deg);
+    
+    left: 3px;
+    top: 6px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+
+::-webkit-input-placeholder {
+    font: 300 1rem 'Roboto', sans-serif;
+    color: #5B5B5B;
+}
+::-moz-placeholder          {
+    font: 300 1rem 'Roboto', sans-serif;
+    color: #5B5B5B;
+}/* Firefox 19+ */
+:-moz-placeholder           {
+    font: 300 1rem 'Roboto', sans-serif;
+    color: #5B5B5B;
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+    font: 300 1rem 'Roboto', sans-serif;
+    color: #5B5B5B;
+}

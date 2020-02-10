@@ -1,0 +1,30 @@
+.manufacturers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.manufacturers-partner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        transition: .3s;
+        filter: grayscale(100%); 
+        &:hover {
+            filter: grayscale(0%); 
+        }
+    }
+}
+
+.manufacturers-img {
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
