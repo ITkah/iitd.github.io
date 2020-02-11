@@ -26,11 +26,11 @@ header {
 
 .header-container {
     display: grid;
-    grid-template-columns: 4fr 7fr 2fr 5fr;
+    grid-template-columns: 4fr 7fr 1fr 5fr;
     align-items: center;
     grid-gap: 20px;
     @media (max-width: 1280px) {
-        grid-template-columns: 3fr 8fr 2fr 5fr;
+        grid-template-columns: 3fr 8fr 1fr 5fr;
     }
     nav {
         display: flex;
@@ -51,7 +51,8 @@ header {
 .search-lang-box {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 90px;
 }
 
 .search-box {
@@ -117,4 +118,8 @@ header {
         white-space: nowrap;
         color: #fff;
     }
+}
+
+.dark-border {
+    border-bottom: 4px solid #000;
 }

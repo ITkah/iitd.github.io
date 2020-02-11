@@ -8,8 +8,13 @@
 .advantage-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    p {
+        text-align: justify;
+        max-width: 230px;
+    }
     img {
         height: 170px;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
 }

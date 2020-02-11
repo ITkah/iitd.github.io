@@ -1,7 +1,7 @@
 .decision-wrapper {
     display: grid;
     grid-template-columns: 2fr 4fr;
-    grid-gap: 70px;
+    grid-gap: 80px;
     .tabs__caption {
         display: flex;
         flex-direction: column;
@@ -11,7 +11,7 @@
             border: 3px solid #000;
             transition: .3s;
             cursor: pointer;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             font: 300 1.125rem 'Roboto', sans-serif;
             &:hover {
                 border: 3px solid #E02F3D;
@@ -26,7 +26,7 @@
     .active {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 30px;
+        grid-gap: 25px;
         a {
             background: #E9E9E9;
             text-decoration: underline;
@@ -47,3 +47,4 @@
         }
     }
 }
+

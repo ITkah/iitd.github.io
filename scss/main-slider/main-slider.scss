@@ -4,8 +4,9 @@
     background-repeat: no-repeat;
 }
 
+
 .slide.slick-slide {
-    min-height: calc(100vh - 5px);
+    height: 80vh;
 }
 
 .slick-dots li {
@@ -31,7 +32,7 @@
     color: #fff;
     max-width: 520px;
     margin: 0 auto;
-    margin-top: 12%;
+    margin-top: 15%;
     position: relative;
     .bg-slider {
         position: absolute;
@@ -39,12 +40,12 @@
         left: -100%;
     }
     .icon-slider {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         z-index: 2;
         position: relative;
     }
     .text-simple {
-        margin-bottom: 60px;
+        margin-bottom: 80px;
         z-index: 2;
         position: relative;
     }
