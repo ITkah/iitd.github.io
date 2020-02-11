@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    str = $('.short-text-1').html();
-    str = str.substr(0, 270) + '...';
-    $('.short-text-1').html(str);
 
     $('div.tabs__caption').on('click', 'p:not(.active-tab)', function() {
         $(this)
@@ -16,4 +13,9 @@ $(document).ready(function() {
         fade: true,
         cssEase: 'linear'
     });
+
+
+    str = $('.short-text-1').html();
+    str = str.substr(0, 270) + '...';
+    $('.short-text-1').html(str);
 });

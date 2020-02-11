@@ -24,10 +24,9 @@ header {
     }
 }
 
-
 .header-container {
     display: grid;
-    grid-template-columns: 4fr 7fr 1fr 5fr;
+    grid-template-columns: 4fr 7fr 2fr 5fr;
     align-items: center;
     grid-gap: 20px;
     @media (max-width: 1280px) {
@@ -85,7 +84,7 @@ header {
     font: 300 1rem 'Roboto', sans-serif;
     text-align: center;
     word-wrap: none;
-    a:first-child{
+    a:first-child {
         background: #E02F3D;
         color: #fff;
         padding: 39px 30px;

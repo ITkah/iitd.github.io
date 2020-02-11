@@ -1,0 +1,27 @@
+.bredcrumbs {
+    margin-bottom: 40px;
+}
+
+.bredcrumbs-container {
+    background: #000;
+    display: inline-block;
+    padding: 5px 100px;
+    a {
+        color: #fff;
+        margin-right: 10px;
+        font: 300 .87rem 'Roboto', sans-serif;
+        position: relative;
+        padding-right: 15px;
+        &::after {
+            content: url(../img/icon/bredcrumbs-arrow.svg);
+            position: absolute;
+            top: 13%;
+            right: -5px;
+        }
+    }
+    a:last-child {
+        &::after {
+            display: none;
+        }
+    }
+}
