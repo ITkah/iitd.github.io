@@ -23,6 +23,13 @@ button {
     }
 }
 
+.pd-right {
+    padding-right: 80px;
+    @media (max-width: 1400px) {
+        padding-right: 20px;
+    }
+}
+
 .margin {
     margin-bottom: 140px;
     @media (max-width: 990px) {

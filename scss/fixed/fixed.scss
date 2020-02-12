@@ -5,12 +5,15 @@
     padding: 20px 10px;
     padding-top: 140px;
     position: fixed;
-    right: 0;
+    right: 50px;
     top: 0;
     background: #000;
-    z-index: 99999;
+    z-index: 999;
     width: 30px;
     height: 100vh;
+    @media (max-width: 1400px) {
+        right: 0;
+    }
     a {
         margin-bottom: 30px;
     }
