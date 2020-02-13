@@ -104,8 +104,17 @@
         }
         &:hover {
             &::before {
-                content: url(../img/icon/play-hover.svg);
+                display: none;
             }
+            &::after {
+                opacity: 1;
+                position: relative;
+            }
+        }
+        &::after {
+            opacity: 0;
+            position: absolute;
+            content: url(../img/icon/play-hover.svg);
         }
     }
 }
@@ -114,9 +123,6 @@
     .news-container {
         display: grid;
         grid-template-columns: 3fr 4fr;
-        // .news-info-box {
-        //     padding: 15px;
-        // }
     }
 }
 

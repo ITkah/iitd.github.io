@@ -75,6 +75,23 @@ footer {
             right: -20px;
             content: url(../img/icon/insta.svg);
         }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: absolute;
+                opacity: 1;
+                top: -5px;
+                right: -20px;
+            }
+        }
+        &::before {
+            content: url(../img/icon/insta-hover.svg);
+            position: absolute;
+            opacity: 0;
+        }
     }
     .fb {
         &::after {
@@ -82,6 +99,23 @@ footer {
             top: -5px;
             right: -20px;
             content: url(../img/icon/fb.svg);
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: absolute;
+                opacity: 1;
+                top: -5px;
+                right: -20px;
+            }
+        }
+        &::before {
+            content: url(../img/icon/fb-hover.svg);
+            position: absolute;
+            opacity: 0;
         }
     }
     .tg {
@@ -91,6 +125,23 @@ footer {
             right: -20px;
             content: url(../img/icon/telegram.svg);
         }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: absolute;
+                opacity: 1;
+                top: -3px;
+                right: -20px;
+            }
+        }
+        &::before {
+            content: url(../img/icon/telega-hover.svg);
+            position: absolute;
+            opacity: 0;
+        }
     }
     .phone {
         &::after {
@@ -99,6 +150,23 @@ footer {
             right: -20px;
             content: url(../img/icon/phone.svg);
         }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: absolute;
+                opacity: 1;
+                top: -5px;
+                right: -20px;
+            }
+        }
+        &::before {
+            content: url(../img/icon/phone-hover.svg);
+            position: absolute;
+            opacity: 0;
+        }
     }
     .mail {
         &::after {
@@ -106,6 +174,23 @@ footer {
             top: -5px;
             right: -20px;
             content: url(../img/icon/mail.svg);
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: absolute;
+                opacity: 1;
+                top: -2px;
+                right: -20px;
+            }
+        }
+        &::before {
+            content: url(../img/icon/mail-hover.svg);
+            position: absolute;
+            opacity: 0;
         }
     }
 }

@@ -12,7 +12,7 @@
     width: 30px;
     height: 100vh;
     @media (max-width: 1800px) {
-        right: 50px;   
+        right: 50px;
     }
     @media (max-width: 1280px) {
         padding-top: 20px;
@@ -23,14 +23,32 @@
     }
     a {
         margin-bottom: 50px;
+        height: 29px;
+        position: relative;
     }
     a:last-child {
         margin-bottom: 90px;
     }
     .insta {
+        position: relative;
         &::after {
             position: relative;
             content: url(../img/icon/insta.svg);
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: relative;
+                opacity: 1;
+            }
+        }
+        &::before {
+            content: url(../img/icon/insta-hover.svg);
+            position: absolute;
+            opacity: 0;
         }
     }
     .fb {
@@ -38,11 +56,42 @@
             position: relative;
             content: url(../img/icon/fb.svg);
         }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: relative;
+                opacity: 1;
+            }
+        }
+        &::before {
+            content: url(../img/icon/fb-hover.svg);
+            position: absolute;
+            opacity: 0;
+        }
     }
     .tg {
         &::after {
             position: relative;
             content: url(../img/icon/telegram.svg);
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: relative;
+                opacity: 1;
+                bottom: -2px;
+            }
+        }
+        &::before {
+            content: url(../img/icon/telega-hover.svg);
+            position: absolute;
+            opacity: 0;
         }
     }
     .phone {
@@ -50,11 +99,42 @@
             position: relative;
             content: url(../img/icon/phone.svg);
         }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: relative;
+                opacity: 1;
+            }
+        }
+        &::before {
+            content: url(../img/icon/phone-hover.svg);
+            position: absolute;
+            opacity: 0;
+        }
     }
     .mail {
         &::after {
             position: relative;
             content: url(../img/icon/mail.svg);
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: relative;
+                opacity: 1;
+                bottom: -3px;
+            }
+        }
+        &::before {
+            content: url(../img/icon/mail-hover.svg);
+            position: absolute;
+            opacity: 0;
         }
     }
 }

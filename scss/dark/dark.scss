@@ -4,7 +4,7 @@
 }
 
 .dark-wrapper {
-    padding: 28px 0;
+    padding: 15px 0;
     color: #fff;
     @media (max-width: 1500px) {
         padding-right: 60px;
@@ -33,11 +33,13 @@
             font: 500 1.25rem 'Roboto', sans-serif;
         }
     }
+    a {
+        display: block;
+    }
     .dark-title-2 {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 }
-
 
 .wrapper-red {
     .link {
