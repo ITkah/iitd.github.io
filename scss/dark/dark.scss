@@ -22,3 +22,23 @@
         margin-bottom: 15px;
     }
 }
+
+// .bg-red {
+//     background: linear-gradient(to right, #000 57.5%, #BE111F 45%);
+// }
+.wrapper-red {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-gap: 40px;
+    .link {
+        text-decoration: underline;
+        color: #fff;
+        position: relative;
+        // text-align: right;
+        // margin: 0;
+    }
+}
+
+.wrapper-red {
+    position: relative;
+}

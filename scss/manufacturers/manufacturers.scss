@@ -8,16 +8,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
-    a{
+    a {
         display: flex;
         align-items: center;
         justify-content: center;
     }
     img {
         transition: .3s;
-        filter: grayscale(100%); 
+        filter: grayscale(100%);
         &:hover {
-            filter: grayscale(0%); 
+            filter: grayscale(0%);
         }
     }
 }
@@ -25,6 +25,18 @@
 .manufacturers-img {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 80px;
+    //     right: -120px;
+    //     bottom: -80px;
+    //     display: block;
+    //     z-index: 999;
+    //     background: #BE111F;
+    // }
     img {
         height: auto;
         max-width: 100%;

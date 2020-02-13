@@ -5,12 +5,15 @@
     justify-content: flex-end;
     padding: 20px 10px;
     position: fixed;
-    right: 50px;
+    right: 200px;
     top: 0;
     background: #000;
     z-index: 999;
     width: 30px;
     height: 100vh;
+    @media (max-width: 1800px) {
+        right: 50px;
+    }
     @media (max-width: 1024px) {
         right: 0;
     }
