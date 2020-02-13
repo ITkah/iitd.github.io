@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: flex-end;
     padding: 20px 10px;
-    padding-top: 190px;
     position: fixed;
     right: 50px;
     top: 0;
@@ -15,7 +15,10 @@
         right: 0;
     }
     a {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+    }
+    a:last-child {
+        margin-bottom: 90px;
     }
     .insta {
         &::after {

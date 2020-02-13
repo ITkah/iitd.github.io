@@ -26,13 +26,9 @@ header {
 }
 
 .header-container {
-    display: grid;
-    grid-template-columns: 4fr 7fr 1fr 5fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    grid-gap: 20px;
-    @media (max-width: 1280px) {
-        grid-template-columns: 3fr 8fr 1fr 5fr;
-    }
     nav {
         display: flex;
         align-items: center;
@@ -47,6 +43,8 @@ header {
 
 .header-logo {
     padding: 8px 0;
+    margin: auto;
+    margin-left: 0;
 }
 
 .search-lang-box {
@@ -54,6 +52,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 90px;
+    margin: 0 60px;
 }
 
 .search-box {
@@ -87,20 +86,23 @@ header {
     text-align: center;
     word-wrap: none;
     a:first-child {
-        background: #E02F3D;
-        color: #fff;
-        padding: 39px 30px;
+        background: #fff;
+        color: #000;
+        border: 1px solid #BE111F;
+        padding: 25px 35px;
         white-space: nowrap;
         width: 100%;
         text-align: center;
         display: flex;
+        align-items: center;
+        justify-content: center;
         .calendar {
             position: relative;
             left: -15px;
             top: -2.5px;
             span {
                 color: #fff;
-                background: #000;
+                background: #BE111F;
                 border-radius: 50%;
                 text-align: center;
                 height: 10px;
@@ -115,7 +117,7 @@ header {
     }
     a:last-child {
         background: #BE111F;
-        padding: 39px 20px;
+        padding: 39px 25px;
         white-space: nowrap;
         color: #fff;
     }

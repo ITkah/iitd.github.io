@@ -1,8 +1,7 @@
 .advantage-wraper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .advantage-box {
@@ -13,8 +12,51 @@
         text-align: justify;
         max-width: 230px;
     }
-    img {
+    .img-adv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 170px;
         margin-bottom: 40px;
+    }
+    .adv-1 {
+        &::before {
+            content: url(../img/advantage/surface1.svg);
+        }
+        &:hover {
+            &::before {
+                content: url(../img/advantage/surface1-hover.svg);
+            }
+        }
+    }
+    .adv-2 {
+        &::before {
+            content: url(../img/advantage/computer.svg);
+        }
+        &:hover {
+            &::before {
+                content: url(../img/advantage/computer-hover.svg);
+            }
+        }
+    }
+    .adv-3 {
+        &::before {
+            content: url(../img/advantage/password.svg);
+        }
+        &:hover {
+            &::before {
+                content: url(../img/advantage/password-hover.svg);
+            }
+        }
+    }
+    .adv-4 {
+        &::before {
+            content: url(../img/advantage/security.svg);
+        }
+        &:hover {
+            &::before {
+                content: url(../img/advantage/security-hover.svg);
+            }
+        }
     }
 }
