@@ -49,6 +49,9 @@
 .news-info-box {
     padding: 40px;
     position: relative;
+    @media (max-width: 1280px) {
+        padding: 20px;
+    }
     .text-simple {
         font-weight: 500;
     }

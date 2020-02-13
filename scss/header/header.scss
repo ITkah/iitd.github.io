@@ -35,8 +35,11 @@ header {
         justify-content: space-between;
         a {
             color: #000;
-            margin: 0 10px;
+            margin: 0 20px;
             font: 300 1rem 'Roboto', sans-serif;
+            @media (max-width: 1280px) {
+                margin: 0 10px;
+            }
         }
     }
 }
@@ -51,8 +54,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90px;
+    width: 100px;
     margin: 0 60px;
+    @media (max-width: 1280px) {
+       margin: 0 20px;
+       width: 90px;
+    }
 }
 
 .search-box {
@@ -88,14 +95,17 @@ header {
     a:first-child {
         background: #fff;
         color: #000;
-        border: 1px solid #BE111F;
-        padding: 25px 35px;
+        border: 2px solid #BE111F;
+        padding: 25px 40px;
         white-space: nowrap;
         width: 100%;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width: 1280px) {
+            padding: 25px 30px;
+        }
         .calendar {
             position: relative;
             left: -15px;
@@ -117,9 +127,12 @@ header {
     }
     a:last-child {
         background: #BE111F;
-        padding: 39px 25px;
+        padding: 39px 30px;
         white-space: nowrap;
         color: #fff;
+        @media (max-width: 1280px) {
+            padding: 39px 20px;
+        }
     }
 }
 

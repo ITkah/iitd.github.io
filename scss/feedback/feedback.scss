@@ -5,6 +5,23 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-gap: 50px;
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+    .feedback-img {
+        img {
+            @media (max-width: 1200px) {
+               max-width: 100%;
+               height: auto;
+            }
+        }
+    }
+    form {
+        @media (max-width: 1200px) {
+            padding-bottom: 20px;
+        }
+    }
     .text-simple {
         margin-bottom: 35px;
     }

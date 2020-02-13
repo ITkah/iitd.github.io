@@ -38,11 +38,12 @@
     .title-xl {
         position: absolute;
     }
-    .tabs__caption {
+    .decision-caption-box {
         display: flex;
         flex-direction: column;
         margin-top: 70px;
-        p {
+        a {
+            width: 300px;
             text-align: center;
             padding: 16px 20px;
             padding-right: 35px;
@@ -51,9 +52,19 @@
             cursor: pointer;
             margin-bottom: 30px;
             text-align: left;
+            color: #000;
             font: 300 1rem 'Roboto', sans-serif;
+            position: relative;
+            @media (max-width: 1400px) {
+                width: auto;
+            }
             &:hover {
                 border: 3px solid #E02F3D;
+                &::after {
+                    position: absolute;
+                    content: url(../img/icon/arrow-white.svg);
+                    right: 10px;
+                }
             }
         }
         .active-tab {

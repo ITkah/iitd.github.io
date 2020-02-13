@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
+    @media (max-width: 1200px) {
+        grid-gap: 25px;
+        margin-bottom: 20px;
+    }
 }
 
 .manufacturers-partner {
@@ -15,6 +19,9 @@
     }
     img {
         transition: .3s;
+        @media (max-width: 1200px) {
+            max-width: 140px;
+        }
         filter: grayscale(100%);
         &:hover {
             filter: grayscale(0%);
