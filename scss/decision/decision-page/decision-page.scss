@@ -1,0 +1,18 @@
+.sertificar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sertificar-box {
+    img {
+        margin-bottom: 25px;
+    }
+    .title {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .text-simple {
+        text-align: center;
+    }
+}
