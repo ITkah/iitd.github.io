@@ -1,0 +1,52 @@
+.main-decision {
+    margin-bottom: 50px;
+}
+
+.main-decision-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    .main-decision-box {
+        .red-decision {
+            border: 3px solid #E02F3D;
+            box-sizing: border-box;
+            text-align: center;
+            font: 300 1.125rem 'Roboto', sans-serif;
+            padding: 10px 20px;
+            margin-bottom: 40px;
+        }
+        .text-simple {
+            margin-bottom: 40px;
+            font-size: 1rem;
+            position: relative;
+            padding-left: 30px;
+        }
+        .text-simple:last-child {
+            margin-bottom: 0;
+        }
+        .proc {
+            &::before {
+                content: url(../img/icon/proc.svg);
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+        }
+        .scan {
+            &::before {
+                content: url(../img/icon/scan.svg);
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+        }
+        .key {
+            &::before {
+                content: url(../img/icon/key.svg);
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+        }
+    }
+}
