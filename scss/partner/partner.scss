@@ -1,0 +1,35 @@
+.partner-info-container {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-gap: 50px;
+}
+
+.partner-box-form {
+    background: #fff;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000;
+    @media (max-width: 1400px) {
+        padding: 20px;
+    }
+    .text-simple {
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    .feedback-input-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        border: none;
+        margin-bottom: 0;
+        button {
+            width: 100%;
+        }
+    }
+    .btn-wrap-form {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+    }
+}
