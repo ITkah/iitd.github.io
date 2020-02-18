@@ -7,6 +7,9 @@
     display: inline-block;
     padding: 5px 100px;
     padding-top: 1px;
+    @media (max-width: 650px) {
+        padding: 5px;
+    }
     a {
         color: #fff;
         margin-right: 10px;

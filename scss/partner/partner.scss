@@ -2,6 +2,13 @@
     display: grid;
     grid-template-columns: 3fr 4fr;
     grid-gap: 50px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+    form {
+        width: 100%;
+    }
 }
 
 .partner-box-form {
@@ -16,6 +23,9 @@
     .text-simple {
         font-weight: 500;
         margin-bottom: 30px;
+        @media (max-width: 650px) {
+            margin-bottom: 20px;
+        }
     }
     .feedback-input-wrapper{
         display: grid;
@@ -23,6 +33,10 @@
         padding: 0;
         border: none;
         margin-bottom: 0;
+        @media (max-width: 650px) {
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+        }
         button {
             width: 100%;
         }
@@ -31,5 +45,10 @@
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 4;
+        @media (max-width: 650px) {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+        }
     }
 }

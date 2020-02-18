@@ -7,21 +7,71 @@
     grid-template-columns: 3fr 8fr;
     grid-gap: 60px;
     align-items: center;
+    @media (max-width: 990px) {
+        grid-gap: 40px;
+        grid-template-columns: 1fr 2fr;
+    }
+    @media (max-width: 650px) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
     .decision-item-short-box-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 40px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .play {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            top: 40%;
+            right: 10px;
+        }
+        &::before {
+            content: url(../img/icon/play.svg);
+        }
+    }
+    .decision-item-short-box:nth-child(2) {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .decision-item-short-box:nth-child(3) {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .decision-item-short-box:last-child {
+        @media (max-width: 990px) {
+            display: none;
+        }
     }
     img {
         max-width: 100%;
         height: auto;
+        @media (max-width: 650px) {
+            height: 120px;
+            margin-top: 20px;
+        }
     }
     .decision-item-short-box {
         margin-bottom: 25px;
+        @media (max-width: 990px) {
+            margin: 0;
+            position: relative;
+        }
     }
     .text-simple-sm {
         color: #3D3D3D;
         font-size: .87rem;
+        @media (max-width: 990px) {
+            padding-right: 60px;
+        }
     }
     .time {
         font: 300 .87rem 'Roboto', sans-serif;
@@ -35,13 +85,28 @@
     grid-template-columns: 3fr 8fr;
     grid-gap: 60px;
     position: relative;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 40px;
+    }
+    @media (max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+    }
     .title-xl {
         position: absolute;
+        @media (max-width: 650px) {
+            position: relative;
+        }
     }
     .decision-caption-box {
         display: flex;
         flex-direction: column;
         margin-top: 70px;
+        position: relative;
+        @media (max-width: 650px) {
+            margin-top: 0;
+        }
         a {
             width: 300px;
             text-align: center;
@@ -58,12 +123,18 @@
             @media (max-width: 1400px) {
                 width: auto;
             }
+            @media (max-width: 990px) {
+                padding: 8px 5px;
+            }
             &:hover {
                 border: 3px solid #E02F3D;
                 &::after {
                     position: absolute;
                     content: url(../img/icon/arrow-white.svg);
                     right: 10px;
+                    @media (max-width: 990px) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -74,6 +145,10 @@
                 position: absolute;
                 content: url(../img/icon/arrow-white.svg);
                 right: 10px;
+                top: 30%;
+                @media (max-width: 990px) {
+                    display: none;
+                }
             }
         }
     }
@@ -95,6 +170,23 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-items: center;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 25px;
+        }
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        a:first-child {
+            @media (max-width: 990px) {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                justify-content: center;
+            }
+            @media (max-width: 650px) {
+                grid-column-end: 2;
+            }
+        }
         img {
             height: 50px;
             transition: .3s;

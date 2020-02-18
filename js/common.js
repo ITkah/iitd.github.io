@@ -14,7 +14,6 @@ $(document).ready(function() {
         cssEase: 'linear'
     });
 
-
     str = $('.short-text-1').html();
     str = str.substr(0, 270) + '...';
     $('.short-text-1').html(str);

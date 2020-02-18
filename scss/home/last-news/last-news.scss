@@ -240,10 +240,19 @@
         max-width: 100%;
         height: auto;
         width: 100%;
+        @media (max-width: 990px) {
+            height: 135px;
+            object-fit: cover;
+        }
     }
 }
 
 .items-news-box {
     background: #F9F9F9;
     padding: 50px 40px;
+    @media (max-width: 990px) {
+        padding: 20px;
+        position: relative;
+        top: -3px;
+    }
 }
