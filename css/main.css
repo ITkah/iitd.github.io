@@ -2168,6 +2168,10 @@ footer {
       padding: 16px 90px 16px 20px;
       font: 300 1rem 'Roboto', sans-serif;
       padding: 10px 80px 10px 40px; } }
+  @media (max-width: 990px) {
+    .btn-dark {
+      padding: 10px 70px 10px 20px;
+      font-size: 1rem; } }
   .btn-dark:hover {
     background: #E02F3D; }
   .btn-dark::after {
