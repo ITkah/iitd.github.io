@@ -21,10 +21,29 @@
         right: 0;
         padding-top: 25px;
     }
+    @media (max-width: 990px) {
+        right: 25px;
+        top: 0;
+        justify-content: flex-start;
+    }
+    @media (max-width: 650px) {
+        display: none;
+    }
     a {
         margin-bottom: 50px;
         height: 29px;
         position: relative;
+        @media (max-width: 990px) {
+            margin-bottom: 40px;
+        }
+    }
+    a:first-child {
+        @media (max-width: 990px) {
+            margin-top: 130px;
+        }
+        @media(max-width: 840px) {
+            margin-top: 77px;
+        }
     }
     a:last-child {
         margin-bottom: 90px;

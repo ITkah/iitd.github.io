@@ -1,5 +1,8 @@
 .feedback {
     margin-bottom: -4px;
+    @media (max-width: 990px) {
+        margin-bottom: 0;
+    }
 }
 
 .feedback-wrapper {
@@ -8,31 +11,82 @@
     grid-gap: 50px;
     @media (max-width: 1280px) {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 25px;
+        grid-gap: 15px;
+    }
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
     }
     .feedback-img {
+        @media (max-width: 990px) {
+            position: relative;
+            justify-content: flex-start;
+            height: 400px;
+        }
+        @media (max-width: 650px) {
+            height: 200px;
+            position: relative;
+        }
         img {
             max-width: 100%;
             height: auto;
+            @media (max-width: 990px) {
+                width: 150%;
+                height: 400px;
+                object-fit: cover;
+                position: absolute;
+                left: -5%;
+            }
+            @media (max-width: 650px) {
+                height: 200px;
+                left: -5%;
+                width: 300%;
+                max-width: 120%;
+            }
         }
     }
     form {
         @media (max-width: 1280px) {
             padding-bottom: 20px;
         }
+        @media (max-width: 990px) {
+            padding-right: 70px;
+        }
+        @media (max-width: 650px) {
+            padding-right: 0;
+        }
     }
     .text-simple {
         margin-bottom: 35px;
+        @media (max-width: 990px) {
+            margin-right: 60px;
+        }
+        @media (max-width: 650px) {
+            padding-right: 0;
+        }
+    }
+    button {
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            padding-right: 120px;
+        }
     }
 }
 
 .feedback-input-wrapper {
     padding: 30px 50px;
-    border: 2px solid #000000;
+    border: 2px solid #000;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
     margin-bottom: 30px;
+    @media (max-width: 990px) {
+        padding: 20px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+    }
     input {
         border: 0.5px solid #000;
         background: #F9F9F9;

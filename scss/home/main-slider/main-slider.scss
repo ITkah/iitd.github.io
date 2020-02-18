@@ -9,6 +9,9 @@
     @media (max-width: 1200px) {
         height: 600px;
     }
+    @media (max-width: 650px) {
+        height: 400px;
+    }
 }
 
 .slick-dots li {
@@ -40,23 +43,79 @@
         margin-top: 10%;
         padding-left: 50px;
     }
+    @media (max-width: 990px) {
+        margin-top: 18%;
+        padding-left: 200px;
+    }
+    @media (max-width: 650px) {
+        margin-top: 20%;
+        padding-left: 150px;
+    }
+    @media (max-width: 420px) {
+        padding-left: 50px;
+        margin-top: 24%;
+    }
     .bg-slider {
         position: absolute;
         height: 540px;
         left: -118%;
         @media (max-width: 1200px) {
-           height: 480px;
-           left: -80%;
+            height: 480px;
+            left: -80%;
+        }
+        @media (max-width: 990px) {
+            height: 400px;
+            left: -40%;
+        }
+        @media (max-width: 650px) {
+            left: -50%;
+            height: 350px;
+        }
+        @media (max-width: 420px) {
+            left: -60%;
+            height: 300px;
+        }
+        @media (max-width: 380px) {
+            left: -55%;
+            height: 250px;
+        }
+        @media (max-width: 360px) {
+            left: -60%;
+        }
+        @media (max-width: 320px) {
+            left: -70%;
+            height: 260px;
         }
     }
     .icon-slider {
         margin-bottom: 60px;
         z-index: 2;
         position: relative;
+        @media (max-width: 990px) {
+            margin-bottom: 20px;
+            height: 20px;
+        }
+        @media (max-width: 650px) {
+            margin-bottom: 15px;
+        }
     }
     .text-simple {
         margin-bottom: 80px;
         z-index: 2;
         position: relative;
+        @media (max-width: 990px) {
+            margin-bottom: 20px;
+            max-width: 320px;
+        }
+        @media(max-width: 650px) {
+            font-size: .87rem;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 420px) {
+            max-width: 250px;
+        }
+        @media (max-width: 320px) {
+            max-width: 225px;
+        }
     }
 }

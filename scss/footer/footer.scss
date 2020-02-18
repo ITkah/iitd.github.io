@@ -6,14 +6,32 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 2fr;
     grid-gap: 25px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0;
+    }
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 10px 0 10px;
+    }
     .footer-box-link {
         padding: 40px 0;
+        @media (max-width: 990px) {
+            padding: 0;
+        }
     }
     .footer-title {
         font: 500 1.125rem/150% 'Roboto', sans-serif;
         margin-bottom: 25px;
         @media (max-width: 1280px) {
             margin-bottom: 15px;
+        }
+        @media (max-width: 990px) {
+            margin-top: 20px;
+        }
+        @media (max-width: 650px) {
+            margin-top: 0;
+            font-size: 1rem;
         }
     }
     .footer-simple-link {
@@ -24,10 +42,38 @@ footer {
         @media (max-width: 1280px) {
             margin-bottom: 15px;
         }
+        @media (max-width: 650px) {
+            font-size: 1rem;
+            margin-right: 10px;
+        }
     }
     .footer-box-sm {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @media (max-width: 990px) {
+            grid-template-columns: 2fr 3fr;
+        }
+    }
+}
+
+.footer-box-link:first-child {
+    @media (max-width: 990px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    @media (max-width: 650px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+.footer-box-link:nth-child(3) {
+    @media (max-width: 990px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-bottom: 25px;
     }
 }
 
@@ -43,6 +89,33 @@ footer {
     @media (max-width: 1400px) {
         margin-right: 0;
     }
+    @media (max-width: 990px) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding: 20px;
+        justify-content: flex-start;
+        padding-top: 80px;
+    }
+    @media (max-width: 650px) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 30px 15px;
+        margin-top: 20px;
+    }
+    &::before {
+        @media (max-width: 650px) {
+            content: '';
+            background: #000;
+            position: absolute;
+            left: -9%;
+            display: block;
+            height: 100%;
+            top: 0;
+            width: 118%;
+        }
+    }
     &::after {
         content: '';
         position: absolute;
@@ -57,6 +130,19 @@ footer {
             width: 110%;
             right: -10%;
         }
+        @media (max-width: 990px) {
+            height: 30px;
+            bottom: -30px;
+            width: 100%;
+            right: 0;
+            left: 0;
+        }
+        @media (max-width: 650px) {
+            left: -9%;
+            right: 0;
+            width: 118%;
+            z-index: 999;
+        }
     }
     a {
         color: #fff;
@@ -64,6 +150,147 @@ footer {
         margin-bottom: 60px;
         padding-right: 40px;
         position: relative;
+        @media (max-width: 990px) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: 650px) {
+            margin-bottom: 30px;
+        }
+    }
+    .mob-insta {
+        @media (max-width: 650px) {
+            &::after {
+                position: absolute;
+                top: -5px;
+                right: -10px;
+                content: url(../img/icon/insta.svg);
+            }
+            &:hover {
+                &::after {
+                    position: absolute;
+                    opacity: 0;
+                }
+                &::before {
+                    position: absolute;
+                    opacity: 1;
+                    top: -5px;
+                    right: -10px;
+                }
+            }
+            &::before {
+                content: url(../img/icon/insta-hover.svg);
+                position: absolute;
+                opacity: 0;
+            }
+        }
+    }
+    .mob-fb {
+        @media (max-width: 650px) {
+            &::after {
+                position: absolute;
+                top: -5px;
+                right: -10px;
+                content: url(../img/icon/fb.svg);
+            }
+            &:hover {
+                &::after {
+                    position: absolute;
+                    opacity: 0;
+                }
+                &::before {
+                    position: absolute;
+                    opacity: 1;
+                    top: -5px;
+                    right: -10px;
+                }
+            }
+            &::before {
+                content: url(../img/icon/fb-hover.svg);
+                position: absolute;
+                opacity: 0;
+            }
+        }
+    }
+    .mob-teg {
+        @media (max-width: 650px) {
+            &::after {
+                position: absolute;
+                top: -5px;
+                right: -10px;
+                content: url(../img/icon/telegram.svg);
+            }
+            &:hover {
+                &::after {
+                    position: absolute;
+                    opacity: 0;
+                }
+                &::before {
+                    position: absolute;
+                    opacity: 1;
+                    top: -3px;
+                    right: -10px;
+                }
+            }
+            &::before {
+                content: url(../img/icon/telega-hover.svg);
+                position: absolute;
+                opacity: 0;
+            }
+        }
+    }
+    .mob-phone {
+        @media (max-width: 650px) {
+            &::after {
+                position: absolute;
+                top: -5px;
+                right: -10px;
+                content: url(../img/icon/phone.svg);
+            }
+            &:hover {
+                &::after {
+                    position: absolute;
+                    opacity: 0;
+                }
+                &::before {
+                    position: absolute;
+                    opacity: 1;
+                    top: -5px;
+                    right: -10px;
+                }
+            }
+            &::before {
+                content: url(../img/icon/phone-hover.svg);
+                position: absolute;
+                opacity: 0;
+            }
+        }
+    }
+    .mob-mail {
+        @media (max-width: 650px) {
+            &::after {
+                position: absolute;
+                top: -5px;
+                right: -10px;
+                content: url(../img/icon/mail.svg);
+            }
+            &:hover {
+                &::after {
+                    position: absolute;
+                    opacity: 0;
+                }
+                &::before {
+                    position: absolute;
+                    opacity: 1;
+                    top: -2px;
+                    right: -10px;
+                }
+            }
+            &::before {
+                content: url(../img/icon/mail-hover.svg);
+                position: absolute;
+                opacity: 0;
+            }
+        }
     }
     a:last-child {
         margin: 0;
@@ -198,4 +425,7 @@ footer {
 .footer-black {
     background: #000;
     height: 40px;
+    @media (max-width: 990px) {
+        height: 30px;
+    }
 }
