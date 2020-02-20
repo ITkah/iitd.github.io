@@ -2,6 +2,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
+    @media (max-width: 990px) {
+        grid-gap: 30px;
+    }
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
     .vebinar-info {
         display: flex;
         justify-content: center;
@@ -23,4 +30,10 @@
 .vebinar-container {
     display: grid;
     grid-gap: 50px;
+    @media (max-width: 990px) {
+        grid-gap: 30px;
+    }
+    @media (max-width: 650px) {
+        grid-gap: 20px;
+    }
 }

@@ -1,0 +1,205 @@
+.contact-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 990px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-info {
+    .title-xl {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.dark-contact {
+    padding: 5px 20px;
+    background: #000;
+    top: -30px;
+    position: relative;
+    display: inline-block;
+    left: -50px;
+    @media (max-width: 990px) {
+        left: 0;
+        top: 0;
+        margin-bottom: 30px;
+        padding-left: 0;
+    }
+    &::before {
+        content: '';
+        height: 40px;
+        display: block;
+        position: absolute;
+        background: #000;
+        width: 300%;
+        left: -300%;
+        top: 0;
+    }
+    a{
+        margin: 0 15px;
+    }
+    a:first-child {
+        @media (max-width: 990px) {
+            margin-left: 0;
+        }
+    }
+    .insta {
+        position: relative;
+        &::after {
+            position: relative;
+            content: url(../img/icon/insta.svg);
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: relative;
+                opacity: 1;
+            }
+        }
+        &::before {
+            content: url(../img/icon/insta-hover.svg);
+            position: absolute;
+            opacity: 0;
+        }
+    }
+    .fb {
+        position: relative;
+        &::after {
+            position: relative;
+            content: url(../img/icon/fb.svg);
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: relative;
+                opacity: 1;
+            }
+        }
+        &::before {
+            content: url(../img/icon/fb-hover.svg);
+            position: absolute;
+            opacity: 0;
+        }
+    }
+    .tg {
+        position: relative;
+        &::after {
+            position: relative;
+            content: url(../img/icon/telegram.svg);
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                opacity: 0;
+            }
+            &::before {
+                position: relative;
+                opacity: 1;
+            }
+        }
+        &::before {
+            content: url(../img/icon/telega-hover.svg);
+            position: absolute;
+            opacity: 0;
+        }
+    }
+}
+
+.contact-info-box {
+    padding: 30px;
+    @media (max-width: 990px) {
+        padding: 0;
+    }
+    @media (max-width: 650px){
+        margin-bottom: 30px;
+    }
+    iframe {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+        @media (max-width: 990px) {
+            margin-bottom: 20px;
+        }
+    }
+    .contact-box-social {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        @media (max-width: 650px){
+            display: flex;
+            flex-direction: column;
+            padding-left: 5px;
+        }
+        .map {
+            &::before {
+                content: url(../img/contact/map.svg);
+                position: relative;
+                left: -5px;
+                top: 5px;
+            }
+        }
+        .phone {
+            margin-bottom: 10px;
+            display: block;
+            &::before {
+                content: url(../img/contact/phone.svg);
+                position: relative;
+                left: -5px;
+                top: 7px;
+            }
+        }
+        .mail {
+            &::before {
+                content: url(../img/contact/mail.svg);
+                position: relative;
+                left: -5px;
+                top: 6px;
+            }
+        }
+        div  {
+            padding-left: 30px;
+            @media (max-width: 650px){
+                padding: 0;
+            }
+        }
+        p,a {
+            color: #000;
+            font: 300 1.2rem/150% 'Roboto', sans-serif;
+            @media (max-width: 650px){
+                margin-bottom: 10px;
+                display: block;
+            }
+        }
+    }
+}
+
+.contact-box-form {
+    .feedback-input-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .btn-white {
+        width: 100%;
+    }
+    .checkbox label {
+        margin: 0;
+    }
+    .text-simple {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        @media (max-width: 650px){
+            font-size: 1rem;
+        }
+    }
+}

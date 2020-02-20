@@ -9,6 +9,8 @@
         background: #fff;
         position: relative;
     }
+
+
     
     .calendar-text {
         @media (max-width: 990px) {
@@ -41,6 +43,99 @@
         }
     }
     
+    .close-btn {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        @media (max-width: 650px) {
+            left: 15px;
+        }
+    }
+
+    .nav-box-dropdown-hover {
+        display: none;
+        position: absolute;
+        top: 98px;
+        max-width: 1000px;
+        margin: 0 auto;
+        z-index: 999;
+        @media (max-width: 1280px) {
+            max-width: 100%;
+            left: 0;
+            top: 96px;
+        } 
+        @media (max-width: 650px) {
+            position: relative;
+            top: 0;
+        }
+        .nav-box-dropdown-wrapper {
+            background: #131313;
+            opacity: .9;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+            padding: 40px 25px;
+            @media (max-width: 990px) {
+                grid-template-columns: 1fr;
+                padding: 20px;
+                background: transparent;
+                opacity: 1;
+            }
+            @media (max-width: 990px) {
+                grid-gap: 10px;
+            }
+            @media (max-width: 650px) {
+                padding-bottom: 0;
+            }
+            .nav-box-title {
+                color: #fff;
+                margin-bottom: 30px;
+                border-bottom: 1px solid #E02F3D;
+                font: 300 1.125rem 'Roboto', sans-serif;
+                display: block;
+                transition: .3s;
+                display: inline-block;
+                &:hover{
+                    color: #E02F3D;
+                }
+                @media (max-width: 990px) {
+                    color: #E02F3D;
+                    border: none;
+                    margin-bottom: 20px;
+                }
+                @media (max-width: 650px ){
+                    margin-bottom: 10px;
+                }
+                &::after {
+                    @media (max-width: 650px) {
+                        content: url(../img/icon/red-down.svg);
+                        right: -10px;
+                        top: -3px;
+                        position: relative;
+                    }
+                }
+            }
+            .nav-box-link {
+                font: 300 1rem 'Roboto', sans-serif;
+                margin-bottom: 25px;
+                color: #fff;
+                display: block;
+                transition: .3s;
+                @media (max-width: 990px) {
+                    margin-bottom: 15px;
+                    font-size: .9rem;
+                }
+                &:hover{
+                    color: #E02F3D;
+                }
+            }
+        }
+    }
+
     .header-container {
         display: flex;
         justify-content: space-between;
@@ -49,19 +144,81 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            height: 100%;
             @media (max-width: 990px) {
                 display: none;
+                position: absolute;
+                z-index: 99999;
+                background: #131313;
+                opacity: .9;
+                left: 0;
+                top: -20px;
+                height: 100vh;
+                padding-top: 70px;
+                overflow-y: scroll;
+                padding-right: 20px;
             }
-            a {
+            @media (max-width: 650px) {
+                width: 100vw;
+                padding: 40px 0;
+                padding-top: 60px;
+            }
+            .link-hover {
                 color: #000;
-                margin: 0 20px;
+                padding: 39px 20px;
                 font: 300 1rem 'Roboto', sans-serif;
+                transition: .3s;
+                position: relative;
+                &:hover {
+                    background: #E9E9E9;
+                    @media (max-width: 990px) {
+                        background: transparent;   
+                        position: relative;
+                    }
+                }
+
+                    &::after {
+                        @media (max-width: 990px) {
+                            content: url(../img/icon/menu-down-arr.svg);
+                            position: absolute;
+                            right: -5%;
+                            top: 22px;
+                        }
+                        @media (max-width: 650px) {
+                            right: -15px;
+                            top: -3px;
+                            position: relative;
+                        }
+                    }
+                
                 @media (max-width: 1280px) {
-                    margin: 0 10px;
+                    padding: 25px 10px;
                 }
                 @media (max-width: 1150px) {
                     margin: 0 5px;
                     font-size: .9rem;
+                }
+                @media (max-width: 990px) {
+                    color: #fff;
+                    font-size: 1.1rem;
+                    transition: auto;
+                }
+                @media (max-width: 650px) {
+                    display: block;
+                    padding-bottom: 0;
+                    padding-top: 20px;
+                }
+            }
+            .link-hover:last-child{
+                &::after {
+                    @media (max-width: 990px) {
+                        display: none;
+                    }
+                }
+                &::before {
+                    @media (max-width: 990px) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -202,4 +359,14 @@
     
     .dark-border {
         border-bottom: 4px solid #000;
+    }
+
+    .link-active {
+        border-bottom: 1px solid #E02F3D;
+    }
+
+    .box-hide-nav {
+        @media (max-width: 650px) {
+            display: none;
+        }
     }

@@ -6,7 +6,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
     .main-decision-box {
+        @media (max-width: 990px) {
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
         .red-decision {
             border: 3px solid #E02F3D;
             box-sizing: border-box;
@@ -14,12 +27,27 @@
             font: 300 1.125rem 'Roboto', sans-serif;
             padding: 10px 20px;
             margin-bottom: 40px;
+            @media (max-width: 990px) {
+                display: inline-block;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                max-width: 450px;
+                margin: 0;
+            }
+            @media (max-width: 650px) {
+                grid-column-start: auto;
+                grid-column-end: auto;
+                max-width: 100%;
+            }
         }
         .text-simple {
             margin-bottom: 40px;
             font-size: 1rem;
             position: relative;
             padding-left: 30px;
+            @media (max-width: 650px) {
+               margin: 0;
+            }
         }
         .text-simple:last-child {
             margin-bottom: 0;
