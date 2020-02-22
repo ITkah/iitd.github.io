@@ -153,6 +153,7 @@
                 opacity: .9;
                 left: 0;
                 top: -20px;
+                width: 80vw;
                 height: 100vh;
                 padding-top: 70px;
                 overflow-y: scroll;
@@ -370,3 +371,166 @@
             display: none;
         }
     }
+
+    .desk-menu {
+        display: none;
+    }
+
+.nav-menu {
+    display: none;
+    @media (max-width: 990px) {
+        display: none;
+        position: absolute;
+        z-index: 999999;
+        background: #131313;
+        opacity: .9;
+        left: 0;
+        top: -20px;
+        width: 80vw;
+        height: 100vh;
+        overflow-y: scroll;
+        padding: 30px;
+    }
+    @media (max-width: 650px) {
+        padding: 20px 15px;
+        width: 93vw;
+        position: fixed;
+    }
+    .menu-close {
+        position: absolute;
+        left: 30px;
+        top: 40px;
+        @media (max-width: 650px) {
+            left: 15px;
+            top: 35px;
+        }
+    }
+    .nav-menu-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        .nav-link-container {
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            @media (max-width: 650px) {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: 130px;
+            }
+            @media (max-width: 380px) {
+                padding-top: 60px;
+            }
+            .nav-link-box {
+                margin-right: 30px;
+                display: block;
+                @media (max-width: 650px) {
+                    margin-right: 0;
+                }
+                .nav-link-call {
+                    color: #fff;
+                    position: relative;
+                    font: 300 1.125rem 'Roboto', sans-serif;
+                    @media (max-width: 990px) {
+                        margin-bottom: 20px;
+                    }
+                    @media (max-width: 650px) {
+                        display: inline-block;
+                    }
+                    &::after {
+                        content: url(../img/icon/menu-down-arr.svg);
+                        position: absolute;
+                        right: -15px;
+                        top: -3px;
+                    }
+                }
+            }
+            .nav-link-call {
+                display: block;
+            }
+        }
+        .nav-mob-active {
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                background: #E02F3D;
+            }
+        }
+    }
+    .nav-menu-info {
+        display: none;
+        @media (max-width: 650px) {
+            display: block;
+            margin-bottom: 100px;
+        }
+        @media (max-width: 380px) {
+            margin-bottom: 25px;
+        }
+        .social-nav {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            a {
+                margin-right: 30px;
+            }
+        }
+        p {
+            color: #fff;
+            font: 300 1rem/150% 'Roboto', sans-serif;
+        }
+    }
+    .nav-link-sm-box {
+        @media (max-width: 650px) {
+            position: relative;
+        }
+        p {
+            color: #E02F3D;
+            font: normal 1rem/150% 'Roboto', sans-serif; 
+            margin-bottom: 15px;
+            margin-top: 25px;
+            display: block;
+            @media (max-width: 650px) {
+                margin: 10px 0;
+            }
+        }
+        a {
+            color: #fff;
+            font: 300 1rem/150% 'Roboto', sans-serif;
+            margin-bottom: 10px;
+            display: block;
+            @media (max-width: 650px) {
+                display: none;
+            }
+        }
+        a:last-child {
+            margin: 0;
+            @media (max-width: 650px) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .call-sm-nav {
+        position: relative;
+        &::after {
+            @media (max-width: 650px) {
+                content: url(../img/icon/arr-red.svg);
+                position: absolute;
+                right: -15px;
+                top: -3px;
+            }
+        }
+    }
+    .nav-link-sm-wrapper {
+        display: none;
+        position: absolute;
+        @media (max-width: 650px) {
+            position: relative;
+        }
+    }
+}
