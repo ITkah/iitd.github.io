@@ -14,6 +14,25 @@ $(document).ready(function() {
         $(".nav-menu").fadeOut(100);
     });
 
+    $(".active-day").on("click", function(){
+        $(".hide-info-vebinar").hide();
+        $(this).children(".hide-info-vebinar").toggle();
+    });
+
+    $(".cl-call-1").on("click", function(){
+        $(".cl-call-2").removeClass("active-calendar");
+        $(".xl-calendar").hide();
+        $(this).addClass("active-calendar");
+        $(".sm-calendar").show();
+    });
+
+    $(".cl-call-2").on("click", function(){
+        $(".cl-call-1").removeClass("active-calendar");
+        $(".sm-calendar").hide();
+        $(this).addClass("active-calendar");
+        $(".xl-calendar").show();
+    });
+
     $(".nav-link-call").on("click", function(){
         $(".nav-link-call").removeClass("nav-mob-active");
         $(".nav-link-sm-wrapper").hide();
