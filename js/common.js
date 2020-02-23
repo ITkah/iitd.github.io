@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
 
     $(".active-day").on("click", function(){
-        $(".hide-info-vebinar").hide();
+        $(".hide-info-vebinar").fadeOut();
         $(this).children(".hide-info-vebinar").toggle();
     });
 
@@ -24,6 +24,11 @@ $(document).ready(function() {
         $(".xl-calendar").hide();
         $(this).addClass("active-calendar");
         $(".sm-calendar").show();
+    });
+
+    $(".show-vebinares").on("click", function(e){
+        e.preventDefault();
+        $(".presenters-box").css("display","flex");
     });
 
     $(".cl-call-2").on("click", function(){

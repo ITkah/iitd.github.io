@@ -1,13 +1,44 @@
     .top-header {
         background: #000;
         z-index: 9999;
-        position: relative;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        .container {
+            padding: 0 50px;
+            @media (max-width: 1200px) {
+                padding: 0 25px;
+            }
+            @media (max-width: 650px) {
+                padding: 0 15px;
+            }
+        }
+    }
+
+    main {
+        margin-top: 121px;
+        @media (max-width: 990px) {
+            margin-top: 80px;
+        }
     }
     
     header {
         z-index: 9999;
         background: #fff;
-        position: relative;
+        position: fixed;
+        width: 100%;
+        top: 25px;
+        left: 0;
+        .container {
+            padding: 0 50px;
+            @media (max-width: 1200px) {
+                padding: 0 25px;
+            }
+            @media (max-width: 650px) {
+                padding: 0 15px;
+            }
+        }
     }
 
 
@@ -229,25 +260,18 @@
         padding: 8px 0;
         margin: auto;
         margin-left: 0;
+        img {
+            height: 43px;
+            @media (max-width: 1280px) {
+                height: 30px;
+            }
+        }
         @media (max-width: 990px) {
             margin: 0;
             order: 3;
         }
         @media (max-width: 650px) {
-            order: 2;
             position: relative;
-            right: -20px;
-        }
-        @media (max-width: 360px) {
-            right: -20px;
-        }
-        img {
-            @media (max-width: 1150px) {
-                height: 50px;
-            }
-            @media (max-width: 990px) {
-                height: 37px;
-            }
         }
     }
     
@@ -265,6 +289,9 @@
             order: 2;
             margin: 0;
             width: 80px;
+        }
+        @media (max-width: 650px) {
+            display: none;
         }
     }
     
@@ -308,7 +335,7 @@
             background: #fff;
             color: #000;
             border: 2px solid #BE111F;
-            padding: 25px 40px;
+            padding: 15px 40px;
             white-space: nowrap;
             width: 100%;
             text-align: center;
@@ -318,7 +345,7 @@
             @media (max-width: 1280px) {
                 padding: 25px 30px;
             }
-            @media (max-width: 990px) {
+            @media (max-width: 1024px) {
                 padding: 17px 25px;
             }
             .calendar {
@@ -346,13 +373,15 @@
         }
         a:last-child {
             background: #BE111F;
-            padding: 39px 30px;
+            padding: 15px 40px;
             white-space: nowrap;
+            display: flex;
+            align-items: center;
             color: #fff;
             @media (max-width: 1280px) {
                 padding: 39px 20px;
             }
-            @media (max-width: 990px) {
+            @media (max-width: 1024px) {
                 padding: 17px 25px;
             }
         }

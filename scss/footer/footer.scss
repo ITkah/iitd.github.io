@@ -39,6 +39,9 @@ footer {
         font: 300 1.125rem/150% 'Roboto', sans-serif;
         display: block;
         color: #000;
+        &:hover {
+            color: #E02F3D;
+        }
         @media (max-width: 1280px) {
             margin-bottom: 15px;
         }

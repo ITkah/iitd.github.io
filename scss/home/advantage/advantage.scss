@@ -33,7 +33,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 170px;
+        height: 125px;
         margin-bottom: 40px;
         @media (max-width: 1100px) {
             height: 150px;
@@ -50,10 +50,12 @@
             bottom: -10px;
         }
         &::before {
-            content: url(../img/advantage/surface1.svg);
-            @media (max-width: 650px) {
-                content: url(../img/advantage/surface1-sm.svg);
-            }
+            content: '';
+            background-image: url(../img/advantage/surface1.svg);
+            width: calc(190px / 2);
+            height: calc(195px / 2);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         &:hover {
             &::before {
@@ -65,20 +67,24 @@
             }
         }
         &::after {
-            content: url(../img/advantage/surface1-hover.svg);
+            content: '';
             opacity: 0;
             position: absolute;
-            @media (max-width: 650px) {
-                content: '';
-            }
+            background-image: url(../img/advantage/surface1-hover.svg);
+            width: calc(190px / 2);
+            height: calc(195px / 2);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
     .adv-2 {
         &::before {
-            content: url(../img/advantage/computer.svg);
-            @media (max-width: 650px) {
-                content: url(../img/advantage/computer-sm.svg);
-            }
+            content: '';
+            background-image: url(../img/advantage/computer.svg);
+            width: calc(190px / 2);
+            height: calc(195px / 2);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         &:hover {
             &::before {
@@ -90,20 +96,24 @@
             }
         }
         &::after {
-            content: url(../img/advantage/computer-hover.svg);
+            content: '';
             opacity: 0;
             position: absolute;
-            @media (max-width: 650px) {
-                content: '';
-            }
+            background-image: url(../img/advantage/computer-hover.svg);
+            width: calc(190px / 2);
+            height: calc(195px / 2);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
     .adv-3 {
         &::before {
-            content: url(../img/advantage/password.svg);
-            @media (max-width: 650px) {
-                content: url(../img/advantage/password-sm.svg);
-            }
+            content: '';
+            background-image: url(../img/advantage/password.svg);
+            width: calc(190px / 2);
+            height: calc(195px / 2);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         &:hover {
             &::before {
@@ -115,20 +125,24 @@
             }
         }
         &::after {
-            content: url(../img/advantage/password-hover.svg);
+            content: '';
             opacity: 0;
             position: absolute;
-            @media (max-width: 650px) {
-                content: '';
-            }
+            background-image: url(../img/advantage/password-hover.svg);
+            width: calc(190px / 2);
+            height: calc(195px / 2);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
     .adv-4 {
         &::before {
-            content: url(../img/advantage/security.svg);
-            @media (max-width: 650px) {
-                content: url(../img/advantage/security-sm.svg);
-            }
+            content: '';
+            background-image: url(../img/advantage/security.svg);
+            width: calc(190px / 2);
+            height: calc(195px / 2);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         &:hover {
             &::before {
@@ -140,12 +154,14 @@
             }
         }
         &::after {
-            content: url(../img/advantage/security-hover.svg);
+            content: '';
             opacity: 0;
             position: absolute;
-            @media (max-width: 650px) {
-                content: '';
-            }
+            background-image: url(../img/advantage/security-hover.svg);
+            width: calc(190px / 2);
+            height: calc(195px / 2);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }
