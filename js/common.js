@@ -69,12 +69,12 @@ $(document).ready(function() {
     $(".link-hover").hover(
         function() {
             $(".nav-box-dropdown-hover").fadeOut(0);
-            $(this).next().fadeIn(100);
+            $(this).next().fadeIn(0);
         }
     );
 
     $(".nav-box-dropdown-hover").mouseleave(function(){
-        $(".nav-box-dropdown-hover").fadeOut(100);
+        $(".nav-box-dropdown-hover").fadeOut(0);
     });
 
     $(window).resize(function() {
@@ -84,6 +84,24 @@ $(document).ready(function() {
         }
     });
 
+
+    $('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
 
 
 

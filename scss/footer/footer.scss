@@ -432,3 +432,27 @@ footer {
         height: 30px;
     }
 }
+
+
+.mfp-content{
+    position: relative;
+    background: #fff;
+    max-width: 500px;
+    padding: 30px;
+    padding-top: 35px;
+    @media (max-width: 650px) {
+        margin: 30px;
+        max-width: 100%;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+    .modal-input {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-white {
+        margin: 0 auto;
+        display: flex;
+    }
+}
