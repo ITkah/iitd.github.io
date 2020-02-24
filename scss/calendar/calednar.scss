@@ -9,7 +9,7 @@
     align-items: center;
     @media (max-width: 990px) {
         display: grid;
-        grid-template-columns: 90px 140px 155px 115px 100px;
+        grid-template-columns: 90px 100px 100px 80px 100px;
         grid-gap: 10px;
     }
     @media (max-width: 700px) {
@@ -26,6 +26,7 @@
             border-radius: 0;
             outline: none;
             font: 300 1rem 'Roboto', sans-serif;
+            width: 100px;
         }
     }
     .btn-calendar-close {

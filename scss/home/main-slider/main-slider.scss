@@ -37,6 +37,7 @@
     color: #fff;
     max-width: 520px;
     margin: 0 auto;
+    
     margin-top: 15%;
     position: relative;
     @media(max-width: 1280px) {
@@ -105,6 +106,7 @@
     .text-simple {
         margin-bottom: 50px;
         z-index: 2;
+        height: 80px;
         position: relative;
         @media (max-width: 990px) {
             margin-bottom: 20px;

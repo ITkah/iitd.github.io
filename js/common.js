@@ -6,6 +6,22 @@ $(document).ready(function() {
             .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+    $(".play-decision").on("click", function(e){
+        e.preventDefault();
+        $(".decision-item-short-box").show();
+        $(this).hide();
+    });
+
+    $(".play-analis").on("click", function(e){
+        e.preventDefault();
+        $(".pdf-link").show();
+        $(this).hide();
+    });
+
+    $(".call-search").on("click", function(){
+        $(".search-hide").fadeToggle(50);
+    });
+
     $(".btn-menu").on("click", function(){
         $(".nav-menu").fadeIn(100);
     });

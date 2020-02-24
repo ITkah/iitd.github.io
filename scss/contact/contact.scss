@@ -141,29 +141,35 @@
             padding-left: 5px;
         }
         .map {
+            position: relative;
+            padding-left: 30px;
             &::before {
                 content: url(../img/contact/map.svg);
-                position: relative;
+                position: absolute;
                 left: -5px;
-                top: 5px;
+                top: -3px;
             }
         }
         .phone {
+            position: relative;
             margin-bottom: 10px;
             display: block;
+            padding-left: 30px;
             &::before {
                 content: url(../img/contact/phone.svg);
-                position: relative;
+                position: absolute;
                 left: -5px;
-                top: 7px;
+                top: -3px;
             }
         }
         .mail {
+            position: relative;
+            padding-left: 30px;
             &::before {
                 content: url(../img/contact/mail.svg);
-                position: relative;
+                position: absolute;
                 left: -5px;
-                top: 6px;
+                top: -3px;
             }
         }
         div  {
