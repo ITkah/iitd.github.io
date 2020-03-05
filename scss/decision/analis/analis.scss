@@ -105,12 +105,9 @@
             flex-wrap: wrap;
         }
         .pdf-link {
-            margin-right: 30px;
+            margin-right: 0;
             font-weight: 300;
             text-decoration: underline;
-            @media (max-width: 1280px) {
-                margin: 5px;
-            }
         }
         .pdf-link:nth-child(n+4) {
             display: none;
