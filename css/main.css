@@ -3666,24 +3666,38 @@ header {
   .analis-box-info .pdf-link {
     color: #fff; }
   .analis-box-info .analis-pdf-box {
-    position: relative; }
-    @media (max-width: 1280px) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    max-width: 450px; }
+    @media (max-width: 650px) {
       .analis-box-info .analis-pdf-box {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap; } }
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-bottom: 30px; } }
     .analis-box-info .analis-pdf-box .pdf-link {
       margin-right: 0;
       font-weight: 300;
+      width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
       text-decoration: underline; }
+      @media (max-width: 650px) {
+        .analis-box-info .analis-pdf-box .pdf-link {
+          width: auto; } }
     .analis-box-info .analis-pdf-box .pdf-link:nth-child(n+4) {
       display: none; }
     .analis-box-info .analis-pdf-box .play-analis {
-      position: relative; }
+      position: absolute;
+      right: 0; }
+      @media (max-width: 650px) {
+        .analis-box-info .analis-pdf-box .play-analis {
+          bottom: -10px;
+          left: -15px;
+          right: auto; } }
       .analis-box-info .analis-pdf-box .play-analis::before {
         content: url(../img/icon/play-2.svg);
         position: absolute;
